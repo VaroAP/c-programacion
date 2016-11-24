@@ -15,13 +15,11 @@ int main(){
 	// 	Mientras decimal  > 0
 
 	do {
-		printf("%i", decimal % 2);
+		printf(" %i", decimal % 2);
 		decimal /= 2;
 	} while (decimal>0);
 
-	printf ("/n");
-
-
+	printf ("\n");
 
 	return EXIT_SUCCESS;
 }
