@@ -1,1 +1,0 @@
-/home/alvaro/work/c-programacion/C/
