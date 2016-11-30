@@ -5,13 +5,13 @@ int main(){
 
     int dni;
     int pos;
-    int fib[] = { 1, 1, 2, 3, 5, 8, 13 };
-    char letra[] = {
-        'T', 'R', 'W', 'A', '1'
-    };
+   // int fib[] = { 1, 1, 2, 3, 5, 8, 13 };
+   // char letra[] = {
+   //     'T', 'R', 'W', 'A', '1'
+   // };
 
-    char frase[] = "hola";
-    char frase[] = {'h', 'o', 'l', 'a', '\0'};
+   // char frase[] = "hola";
+   // char frase[] = {'h', 'o', 'l', 'a', '\0'};
 
     char letras[] = "TRWAGMYFPDXBNJZSQVHLCKE";
 
