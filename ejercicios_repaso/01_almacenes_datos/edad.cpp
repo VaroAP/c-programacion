@@ -3,7 +3,7 @@
 
 int main(){
 	int edad;
-		printf( "¿Cual es tu edad?");
+		printf( "¿Cual es tu edad?\n");
 			scanf(" %i", &edad);
 
 		printf("Tu edad es: %i",edad);

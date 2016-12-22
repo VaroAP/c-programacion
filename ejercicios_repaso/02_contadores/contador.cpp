@@ -2,11 +2,10 @@
 #include <stdlib.h>
 
 int main(){
-	int edad;
-		printf( "¿Cual es tu edad?");
-			scanf(" %i", &edad);
 
-		printf("Tu edad es: %i",edad);
+		for(int i=0; i < 100; i++){
+			printf("%i\n",i+1);
+		}
 
 		return EXIT_SUCCESS;
 }
