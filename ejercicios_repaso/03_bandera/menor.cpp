@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(){
-	int num = 0, mayor=0;
+	int num = 0, menor=0;
 
 	printf("Dime 10 números:\n");
 
@@ -10,11 +10,13 @@ int main(){
 			printf("Número %i:", con+1);
 			scanf(" %i", &num);
 
-			if( num > mayor)
-				mayor = num;
+			if( con == 0)
+				menor = num;
+			if(num < menor)
+				menor=num;
 
 		}
-	printf("El número mayor introducido es el %i. \n", mayor);
+	printf("El número menor introducido es el %i. \n", menor);
 
 	return EXIT_SUCCESS;
 
