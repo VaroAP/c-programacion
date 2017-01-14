@@ -5,8 +5,8 @@ int main(){
 
 
 	printf("Código ascii:\n");
-	for(int con =0; con < 256; con++);
-		printf("%i.- %c\n", con, con);
+	for(int con =0; con < 256; con++)
+		printf("%i.  - %c\n", con, con);
 
 
 
