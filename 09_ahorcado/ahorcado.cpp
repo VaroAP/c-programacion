@@ -4,12 +4,12 @@
 #include <time.h>
 
 #define MAX 29
-#define V 30
+#define TRUE 1
+#define FALSE 0
 #define CANTIDAD(x) (sizeof( (x) ) / sizeof(char *) - 1)
 
 const char *palabra[] = {
-    "amalgama","narcolepsia","alcorque","suricato","amapola","parguela","bonita","shuriken","hermoso",
-    "panenteismo","nemesis","anabasis","antítesis","origen","artropodo",NULL
+    "videojuego","camisa","programa","sudadera","portatil","alpargata","nieve",NULL
 };
 
 int main(int argc, char *argv[]){
@@ -17,7 +17,8 @@ int main(int argc, char *argv[]){
     const char *elegida;
     char adivinado[MAX];
     int aleatoria;
-    char letra[V];
+    char letra[TRUE];
+    int fallos=0;
 
     srand(time(NULL));
     aleatoria = rand() % CANTIDAD(palabra);
@@ -25,23 +26,29 @@ int main(int argc, char *argv[]){
 
     // strcpy(adivinado, elegida);
     bzero(adivinado, MAX);
-    	for (int i=0; i<(int) strlen(elegida); i++)
+    	for (int i=0; i<(int) strlen(elegida); i++){
      			adivinado[i] = '_';
-		printf("Dime una letra:");
-		scanf(" %c",letra);
-
-	do{
-   	     for (int i=0; i<(int) strlen(elegida); i++)
-        	letra[V]= 'a';
-
-
+			printf("%c ", adivinado[i]);
 	}
 
-	while(letra[V]);
+	do{
+		printf("\n\t Dime una letra:\n");
+		scanf(" %c",letra);
+
+   	     for (int i=0; i<(int) strlen(elegida); i++){
+
+        	 if(elegida[i]==letra[FALSE]){
+
+			adivinado[i]=letra[FALSE];}
+
+			printf(" %c",adivinado[i]);
+
+			fallos++;
+	 }
+
+	}while(fallos>=0);
 
 
-    printf("\t%s\n", elegida);
-    printf("\t%s\n", adivinado);
 
     return EXIT_SUCCESS;
 }
