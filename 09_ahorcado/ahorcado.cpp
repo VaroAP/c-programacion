@@ -28,11 +28,11 @@ int main(int argc, char *argv[]){
     bzero(adivinado, MAX);
     	for (int i=0; i<(int) strlen(elegida); i++){
      			adivinado[i] = '_';
-			printf("%c ", adivinado[i]);
+			printf(" %c ", adivinado[i]);
 	}
 
 	do{
-		printf("\n\t Dime una letra:\n");
+		printf("\nDime una letra:\n");
 		scanf(" %c",letra);
 
    	     for (int i=0; i<(int) strlen(elegida); i++){
@@ -41,14 +41,15 @@ int main(int argc, char *argv[]){
 
 			adivinado[i]=letra[FALSE];}
 
+
 			printf(" %c",adivinado[i]);
 
 			fallos++;
-	 }
+	     }
 
-	}while(fallos>=0);
-
-
-
-    return EXIT_SUCCESS;
+	  }while(fallos>=0);
+		if (fallos>=4){
+			printf("Se te han agotado los intentos");
+		}
+return EXIT_SUCCESS;
 }

@@ -1,0 +1,13 @@
+1 Crea una variable en un array que se llame palabra
+2 Dentro de ese array ponemos los nombre que queramos
+3.Creamos el cuerpo (int main)
+4 Creamos una constante y puntero en una variable
+5.Creamos una variable adivinado de un bit en una array dentro ponemos MAX y lo definimos al principio del programa
+6creamos una variable de 8 bits llamada aleatoria
+7. Creamos una variable de un bit llama letra y hacemos un array dentro de ese array ponemos TRUE y lo definimos al inicio del programa
+8. creamos una variable de 8 bit que se llame fallos y pongamos que sea igual a 0
+9.srand
+10. Aleatoria es igual a resto de rand entre la palabra
+11 elegida es igual a la palabra aleatoria
+12 ponemos los bits a cero de adivinado y max
+13 Creamos un bucle y en ese bucle 
