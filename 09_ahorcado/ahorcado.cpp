@@ -44,12 +44,13 @@ int main(int argc, char *argv[]){
 
 			printf(" %c",adivinado[i]);
 
-			fallos++;
-	     }
+			     }
+		;
+
 
 	  }while(fallos>=0);
 		if (fallos>=4){
-			printf("Se te han agotado los intentos");
+			printf("Has llegado al limite de errores");
 		}
 return EXIT_SUCCESS;
 }
